@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;1,500&display=swap');
+
+:root {
+  --text-color: #504057;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background: linear-gradient(
+      360deg,
+      #b197a8 25%,
+      #a9b1e2 35%,
+      #d0c8c7 50%,
+      #e2d1b6 75%
+    ),
+    radial-gradient(
+      70% 130% at 50% 20%,
+      #dbdbdb 35%,
+      #b6bfff 55%,
+      #dd99c6 75%,
+      #fa845c 100%
+    );
+
+  color: var(--text-color);
+  font-family: 'Cardo', Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+main {
+  padding: 10vh max(1rem, calc((100% - 60ch) / 2)) 0;
+}
+
+nav {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 2em 2em 0 2em;
+  font-size: 0.875em;
+  display: flex;
+}
+
+nav .right {
+  margin-left: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+}
+
+h1, nav {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25ch;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
+.socials {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.social {
+  filter: invert(20%) sepia(1) saturate(100%) hue-rotate(250deg);
+  height: 32px;
+  width: 32px;
+  margin-right: 12px;
+  text-align: right;
+}
+
+.socials a:hover {
+    filter: brightness(1.5) saturate(300%);
+    margin-top: 2rem;
+    text-align: right;
+}
+
+blockquote {
+  border-left: var(--text-color) 4px;
+  margin: 0;
+  padding: 1rem;
+  font-style: italic;
+  border-left: 4px solid #b6bdff;
+  font-size: 1.25rem;
+}
+
+blockquote #attribution {
+  font-style: normal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+article {
+  margin-bottom: 20vh;
+}

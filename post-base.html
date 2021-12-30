@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="left">
+                <a href="/">Zahra Traboulsi</a>
+            </div>
+            <div class="right">
+                <a href="/writing">Writing</a>
+            </div>
+        </nav>
+        <main>
+            <article>
+                <markdown>
+                <slot name="content" />
+            </markdown>
+            </article>
+        </main>
+    </body>
+</html>
