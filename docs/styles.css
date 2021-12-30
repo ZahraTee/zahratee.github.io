@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400&display=swap');
 
 :root {
   --text-color: #504057;
+  --link-color: #7f3e8f;
 }
 
 * {
@@ -33,13 +34,14 @@ body {
     );
 
   color: var(--text-color);
-  font-family: 'Cardo', Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-family: 'Crimson Pro', Georgia, Times, 'Times New Roman', serif;
   line-height: 1.5;
   min-height: 100vh;
 }
 
 main {
-  padding: 10vh max(1rem, calc((100% - 60ch) / 2)) 0;
+  padding: 10vh max(1rem, calc((100% - 50ch) / 2)) 0;
 }
 
 nav {
@@ -75,6 +77,16 @@ h2 {
 
 h3 {
   font-size: 1.125em;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration-color:  var(--text-color);
+}
+
+a:hover {
+  color: var(--link-color);
+  text-decoration-color:  var(--link-color);
 }
 
 .socials {
@@ -116,4 +128,30 @@ blockquote #attribution {
 
 article {
   margin-bottom: 20vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(360deg, #A17CAD 0.67%, #9199AD 13.91%, #2A5089 34.33%, #1d243e 58.15%), radial-gradient(61.08% 85.89% at 50% 50%, #303a91 34.9%, #824eaa 54.17%, #BE99D0 72.4%, #FFD89F 92.19%);
+    --text-color: #EEE8F1;
+    --link-color: #e0a3ff;
+    background-blend-mode: multiply;
+    font-weight: 300;
+  }
+
+  .social {
+    filter: invert(100%);
+  }
+
+  .socials a:hover {
+    filter: brightness(0.5) sepia(1) saturate(300%) hue-rotate(230deg);
+    margin-top: 2rem;
+    text-align: right;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1em 2em 2em 2em;
+  }
 }
