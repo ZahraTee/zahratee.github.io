@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx eleventy",
-    "serve": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "build": "xm build"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "xm": "^1.0.7-test.0.0.0"
   }
 }
